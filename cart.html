@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Cart</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icons/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="css/onlinecss.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.jfif" type="image/jfif">
+    <style>
+        .abc {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <nav class="nav">
+        <a href="index.html" class="nav__link">
+            <i class="fas fa-user nav__icon"></i>
+            <span class="nav__text">Home</span>
+        </a>
+        <a href="shop.html" class="nav__link">
+            <i class="fas fa-shopping-bag nav__icon"></i>
+            <span class="nav__text">Shop</span>
+        </a>
+        <a href="blog.html" class="nav__link">
+            <i class="fas fa-book nav__icon"></i>
+            <span class="nav__text">Blog</span>
+        </a>
+        <a href="about.html" class="nav__link">
+            <i class="fas fa-table nav__icon"></i>
+            <span class="nav__text">About</span>
+        </a>
+        <a href="contact.html" class="nav__link">
+            <i class="fas fa-phone nav__icon"></i>
+            <span class="nav__text">Contact</span>
+        </a>
+    </nav>
+
+    <section id="header">
+
+        <a href=""><img src="img/logo.png"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html" class="navfade">Home</a></li>
+                <li><a href="shop.html" class="navfade">Shop</a></li>
+                <li><a href="blog.html" class="navfade">Blog</a></li>
+                <li><a href="about.html" class="navfade">About</a></li>
+                <li><a href="contact.html" class="navfade">Contact</a></li>
+                <li><a href="cart.html" class="active"><i class="fas fa-shopping-bag"></i></a></li>
+                <li><a><i class="fas fa-moon" id="theme-btn"></i></a></li>
+                <li><a class="user" href="login.html"><i class="fas fa-user"></i></a></li>
+                <li><a class="bar"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="side-bar">
+            <div class="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="menu">
+                <div class="item"><a href="index.html"> <i class="fas fa-home"> </i> Home </a></div>
+                <div class="item"><a href="blog.html"> <i class="fas fa-book"> </i> Blog </a></div>
+                <div class="item"><a href="shop.html"> <i class="fas fa-shopping-cart"> </i> Shop </a></div>
+                <div class="item"><a href="about.html"> <i class="fas fa-table"> </i> About </a></div>
+                <div class="item"><a href="contact.html"> <i class="fas fa-phone"></i> Contact </a></div>
+            </div>
+        </div>
+
+    </section>
+
+    <br><br><br>
+
+    <section id="aboutbanner" style="background-image:url('img/banner/17.png')">
+        <div class="text">
+            <h3>#Cart</h3>
+            <p>Pay with Debit Card, Easypaisa or Jazzcash</p>
+        </div>
+    </section>
+
+    <section id="cart">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Product</td>
+                    <td>Image</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody id="rem">
+                <tr>
+                    <td><a><button><i class="fas fa-times-circle"></i></button></a></td>
+                    <td>Cotton Shirt</td>
+                    <td><img src="img/products/f1.jpg"></td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+                <tr id="rem">
+                    <td><a><button><i class="fas fa-times-circle"></i></button></a></td>
+                    <td>Cotton Shirt</td>
+                    <td><img src="img/products/f2.jpg"></td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+                <tr id="rem">
+                    <td><a><button><i class="fas fa-times-circle"></i></button></a></td>
+                    <td>Cotton Shirt</td>
+                    <td><img src="img/products/f3.jpg"></td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+                <tr id="rem">
+                    <td><a><button><i class="fas fa-times-circle"></i></button></a></td>
+                    <td>Cotton Shirt</td>
+                    <td><img src="img/products/f4.jpg"></td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="empcart" onclick="rem1()">Empty Cart</button>
+    </section>
+
+    <section id="total">
+        <div class="coupn">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter your coupon">
+                <button>Apply</button>
+            </div>
+        </div>
+        <div class="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$312</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><Strong>Total</Strong></td>
+                    <td><Strong>$312</Strong></td>
+                </tr>
+            </table>
+            <button>Proceed to checkout</button>
+        </div>
+    </section>
+
+    <section id="banner3" style="background-image: url('img/banner/15.jpg');">
+        <div class="text">
+            <h4>Sign Up For Newsletter </h4>
+            <p>Get E-mail updates about our <span> special offers </span></p>
+        </div>
+        <div class="input">
+            <input type="Email" placeholder="Enter email address">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <section id="footer">
+
+        <div class="one">
+            <h3>Social links</h3>
+            <ul>
+                <li><a href="#"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Facebook</a></li>
+                <li><a href="#"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Instagram</a></li>
+                <li><a href="#"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Youtube</a></li>
+                <li><a href="#"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Twitter</a></li>
+                <li><a href="#"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Pinterest</a></li>
+            </ul>
+            <div class="linkicons">
+                <i id="icons" class="fab fa-facebook"> </i>
+                <i id="icons" class="fab fa-facebook-messenger"> </i>
+                <i id="icons" class="fab fa-instagram"> </i>
+                <i id="icons" class="fab fa-whatsapp"> </i>
+                <i id="icons" class="fab fa-twitter"> </i>
+            </div>
+        </div>
+        <div class="two">
+            <h3>Quick links</h3>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Home</a></li>
+                <li><a href="shop.html"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Shop</a></li>
+                <li><a href="blog.html"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Blog</a></li>
+                <li><a href="about.html"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; About</a></li>
+                <li><a href="contact.html"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="three">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="shop.html"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Shop</a></li>
+                <li><a href="#"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Wishlist</a></li>
+                <li><a href="cart.html"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Cart</a></li>
+                <li><a href="#"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Check Out</a></li>
+                <li><a href="blog.html"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="four">
+            <h3>Customer Care</h3>
+            <ul>
+                <li><a href="#"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Privacy & Policy</a></li>
+                <li><a href="#"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Terms & conditions</a></li>
+                <li><a href="#"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Disclaimer</a></li>
+                <li><a href="login.html"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Login / Sign-Up</a></li>
+                <li><a href="#"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp; Exchange & Return</a></li>
+            </ul>
+            <div class="payimg">
+                <img src="img/pay/pay.png" alt="">
+            </div>
+            <div class="app">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>@Copyright 2022 by <span> SAIM ASIF </span> All Right Reserved </p>
+        </div>
+    </section>
+
+
+
+    <script src="js/onlinejs.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.bar').click(function () {
+                $('.side-bar').addClass('active');
+            });
+
+            $('.close-btn').click(function () {
+                $('.side-bar').removeClass('active');
+            });
+
+        });
+    </script>
+
+    <script>
+
+        var a = 'fas fa-moon';
+
+        $(document).ready(function () {
+            $("#theme-btn").click(function () {
+                if (a == 'fas fa-moon') {
+                    $("body").css("background", "red");
+                    $("#theme-btn").attr("class", "fas fa-sun");
+                    $("body").css("background", "rgb(20, 17, 17)");
+                    $("#cart thead td").css("color", "lightgray");
+                    $("#cart tbody td").css("color", "white");
+                    $("#total h3").css("color", "lightgray");
+                    $("#total table td").css("color", "white");
+                    a = 'fas fa-sun';
+                }
+                else if (a == "fas fa-sun") {
+                    $("body").css("background", "blue");
+                    $("#theme-btn").attr("class", "fas fa-moon");
+                    $("body").css("background", "white");
+                    $("#cart thead td").css("color", "black");
+                    $("#cart tbody td").css("color", "black");
+                    $("#total h3").css("color", "black");
+                    $("#total table td").css("color", "black");
+                    a = 'fas fa-moon';
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        function rem1() {
+            var b = confirm("Are you sure to EMPTY CART");
+            console.log(b);
+            if (b == true) {
+                document.getElementById("rem").classList.add("abc");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
